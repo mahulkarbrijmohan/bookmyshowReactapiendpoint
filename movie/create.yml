@@ -1,0 +1,31 @@
+info:
+  name: create
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseURL}}/movies"
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTg5OGE2NWYwZjM4NjNjZjA0NmQ5OGIiLCJlbWFpbCI6Im1haHVsa2FyYnJpam1vaGFuamlAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzcwNjI4ODQ5LCJleHAiOjE3NzA2MzI0NDl9.pr7so0Cwf9xgJttc0MIxjZyTMs_WPh-5167D6RKibMo
+  body:
+    type: json
+    data: |-
+      {
+              "movieName": "Inception2",
+              "description": "A skilled thief is given a chance at redemption if he can successfully perform an inception.",
+              "poster": "https://m.media-amazon.com/images/I/51s+9U+9H-L._AC_SY679_.jpg",
+              "releaseDate": "2010-07-16T00:00:00.000Z",
+              "genre": ["Action", "Sci-Fi", "Thriller"],
+              "duration": 148,
+              "rating": 8.8,
+              "language":"english"
+          }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

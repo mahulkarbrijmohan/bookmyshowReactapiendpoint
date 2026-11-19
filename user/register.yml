@@ -1,0 +1,25 @@
+info:
+  name: register
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseURL}}/auth/register"
+  body:
+    type: json
+    data: |-
+      {
+          "name":"brijmohanji",
+          "password": "123456",
+          "email":"mahulkarbrijmohanji@gmail.com",
+          "role":"admin"
+
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

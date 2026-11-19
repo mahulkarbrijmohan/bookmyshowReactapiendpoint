@@ -1,0 +1,25 @@
+info:
+  name: getByID
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: "{{baseURL}}/api/v1/theatre/6989e0dcd7989b956263a473"
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTg5OGE2NWYwZjM4NjNjZjA0NmQ5OGIiLCJlbWFpbCI6Im1haHVsa2FyYnJpam1vaGFuamlAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzcwNjI4ODQ5LCJleHAiOjE3NzA2MzI0NDl9.pr7so0Cwf9xgJttc0MIxjZyTMs_WPh-5167D6RKibMo
+  body:
+    type: json
+    data: |-
+      {
+              "movieName": "Inception3"
+              
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,31 @@
+info:
+  name: create show
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseURL}}/theatres"
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTg5OGE2NWYwZjM4NjNjZjA0NmQ5OGIiLCJlbWFpbCI6Im1haHVsa2FyYnJpam1vaGFuamlAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzcwNjQzNTk0LCJleHAiOjE3NzA2NTQzOTR9.CX2hsLKBbKSfqyrQSDAkUR55QEJoWF1q3AbMuDYwqlA
+  body:
+    type: json
+    data: |-
+      {
+              "name": "PVR Cinemas2",
+              "address": "123 Main Street, Mumbai, India",
+              "phone": 9876543210,
+              "location": "mumbai",
+              "email": "pvr@mumbai.com",
+              "owner": "698844a009c1fc204c11d440", 
+              "isActive": true
+
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
